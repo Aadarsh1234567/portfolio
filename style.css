@@ -1,0 +1,281 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Libre+Baskerville&family=Open+Sans:ital,wght@1,300&family=Pacifico&family=Permanent+Marker&family=Roboto+Mono:wght@100&family=Ubuntu:wght@300&display=swap');
+
+ html {
+    scroll-behavior: smooth;
+ }
+/* top navigation bar */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	top: 0;
+	background-color: rgb(2, 2, 19);
+	z-index: 2;
+	position: sticky;
+	padding: 15px;
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	gap: 20px;
+}
+
+.navbar ul li {
+	font-family: "Ubuntu", sans-serif;
+	font-size: xx-large;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	color: gold;
+	transition: all.5s ease;
+}
+
+.navbar ul li a:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 10px white;
+	padding: 10px;
+}
+
+#Home {
+	min-height: 93.1vh;
+	background-color: rgb(3, 3, 26);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.homepage_pic img {
+	height: 1000px;
+	width: 1000px;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border: 3px solid gold;
+    transition: all .3s ease-in-out;
+    
+}
+
+.homepage_pic img:hover{
+       cursor: pointer;
+       transform: scale(1.02);
+}
+
+.homepagetext {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Indie Flower', cursive;
+	flex: 1;
+	text-align: center;
+	position: relative;
+}
+.homepagetext #title .emoji {
+    font-size: 80px;
+    animation: emojiAnimation 3s infinite;
+    padding-bottom: 40px;
+}
+
+@keyframes emojiAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.homepagetext #title,
+.homepagetext #subtitle {
+	color: gold;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin-left: 30px;
+    position: relative;
+
+
+  
+}
+
+.homepagetext #title {
+	font-size: 130px;
+}
+.homepagetext #subtitle {
+	font-size: 60px;
+}
+
+.homepagetext #interest {
+    font-size: 100px;
+    color: gold;
+    padding-top: 100px;
+    padding-bottom: 390px;
+    height: 1px;
+    overflow: hidden;
+    
+}
+
+#Aboutme {
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(3, 3, 26);
+    
+}
+
+.abhead {
+    color: rgb(45, 45, 43);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+
+#abt {
+    color:black;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.whoami {
+    width: 1400px;
+    margin-left: 260px;
+    background-color:blanchedalmond;
+    padding: 40px;
+    border-style:hidden;
+    box-shadow: 0px 10px 26px 21px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all .2s ease-in-out;
+}
+
+
+.whoami:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.myinterest {
+    display: flex;
+    justify-content: center;
+}
+
+.myinterest h1 {
+    color: gold;
+    font-size: 60px;
+    margin-top: 80px;
+    margin-left: 70px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.myinterest h1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.myinterest a {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.cardcont {
+    display: flex;
+    justify-content: center;
+    
+}
+  
+
+.cards {
+    width: 600px;
+    margin: 20px;
+    height: 400px;
+}
+
+.cardimg img {
+    width: 100%;
+    height: 400px;
+    transition: all 3s ease;
+   
+    
+}
+
+.cardimg:hover {
+     transform: scale(1.01);
+      cursor: pointer;
+
+}
+
+
+
+
+
+
+#Contact {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(3, 3, 26);
+}
+
+.contact1 {
+    color: gold;
+    font-size: 60px;
+    margin-top: 0px;
+    padding-top: 90px;
+    margin-left: 700px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Social Media Icons */
+.socialicons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  .socialicons a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+  }
+  
+  .socialicons a:hover {
+    color:gold;
+    
+
+  }
+  
+  .socialicons i {
+    font-size: 3em;
+  }
+
+  .socialicons img {
+    width: 50px;
+    color: gold;
+    
+  }
+
+  .socialicons img:hover{
+    fill: gold;
+  }
+
+ footer {
+    color: gold;
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+    margin-left: 750px;
+    padding-top: 250px;
+ }
